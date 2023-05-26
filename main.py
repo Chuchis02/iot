@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from pydantic import BaseMode1
+
 
 app=FastAPI()
 
@@ -34,11 +34,5 @@ def revisar_edades(E1,E2):
     else:
         return "tienen la misma edad"
     
-class Item(BaseModel):
-    name: str 
-    description: str
-    price: float
-        
-@app.post("items")
 
 
